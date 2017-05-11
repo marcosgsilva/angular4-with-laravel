@@ -1,0 +1,19 @@
+<header id="header">
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">Sistema de Portaria</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a [routerLink]="['/products']">Portaria</a></li>
+                <li><a href="/stock-in">Registro de Entrada </a></li>
+                <li><a href="/stock-out">REgistro de Saída</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</main>
