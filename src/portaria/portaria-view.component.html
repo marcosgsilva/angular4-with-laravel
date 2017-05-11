@@ -1,0 +1,27 @@
+<h3>Visitantes</h3>
+<a href="" class="btn btn-primary">Novo</a>
+<br/>
+<br/>
+<table class="table table-hover table-striped">
+    <tr>
+        <td>Nome</td>
+        <td>{{visitante.nome}}</td>
+    </tr>
+    <tr>
+        <td>Cpf</td>
+        <td>{{visitante.cpf}}</td>
+    </tr>
+    <tr>
+        <td>Setor</td>
+        <td>{{visitante.setor}}</td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div class="col-md-offset-4"><a [routerLink]="['/portaria/'+visitante.id+'/edit']"
+                                                     class="btn btn-default btn-lg">Editar</a>
+                &nbsp;<a [routerLink]="['/portaria/'+visitante.id+'/remove']" class="btn btn-danger btn-lg">Remover</a>
+            </div>
+        </td>
+    </tr>
+
+</table>
